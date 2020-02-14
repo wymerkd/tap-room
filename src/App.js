@@ -12,6 +12,7 @@ function App() {
       <Switch>
         <Route exact path='/' component={Home}/>
         <Route path='/newbeer' component={NewBeer}/>
+        <Route path='/newbeerform' component={NewBeerForm}/>
         <Route component={Error404}/>
       </Switch>
     </div>
