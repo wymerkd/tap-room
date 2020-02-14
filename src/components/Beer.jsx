@@ -16,9 +16,9 @@ function Beer(props){
   }
 
   const beerPropStyles = {
-    border: 'solid',
-    width: '600px',
-    height: '140px',
+    borderStyle: 'none',
+    width: '750px',
+    height: '115px',
     marginLeft: '40px',
     backgroundColor: '#4F5B72'
   }
@@ -46,7 +46,7 @@ function Beer(props){
     fontSize: '24px',
     textTransform: 'uppercase',
     wordSpacing: '3px',
-    color: '#92CDE2',
+    color: '#d1913c',
   }
 
   const beerTypeStyle = {
@@ -92,7 +92,7 @@ function Beer(props){
     position: 'relative',
     left: '24%',
     marginRight: '18%',
-    transform: 'translate(-50%, -65%)'
+    transform: 'translate(-75%, -65%)'
   }
 
 return (
@@ -116,6 +116,7 @@ return (
         </div>
       </div>
     </div>
+    <br></br>
   </div>
   );
 }
