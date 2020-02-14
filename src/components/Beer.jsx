@@ -11,27 +11,61 @@ function Beer(props){
     background: '#808080',
     background: '-webkit-linear-gradient(to right, #808080, #3fada8)',
     background: 'linear-gradient(to right, #808080, #3fada8)',
-    padding: "4%"
+    padding: '25px'
+  }
+
+  const numberPosition = {
+    float: 'left',
+    paddingTop: '30px'
+  }
+
+  const beerInfoPosition = {
+    paddingLeft: '65px',
+    border: 'solid',
   }
 
   const nameStyle = {
     fontSize: '24px',
     textTransform: 'uppercase',
     wordSpacing: '3px',
-    paddingRight: '5px'
+    paddingRight: '5px',
+  }
+
+  const brewerStyle = {
+    fontSize: '24px',
+    textTransform: 'uppercase',
+    wordSpacing: '3px',
+  }
+
+  const beerTypeStyle = {
+    fontSize: '18px',
+    textTransform: 'capital',
+    wordSpacing: '2px',
+  }
+
+  const locationStyle = {
+    fontSize: '18px',
+    textTransform: 'capital',
+    wordSpacing: '2px',
   }
 
 return (
   <div>
     <div>
-      <span style={numberStyle}>{props.number}</span>
-      <span style={nameStyle}>{props.name}</span>
-      <span>{props.brewer}</span>
-      <span>{props.beerType}</span>
-      <span>{props.location}</span>
-      <span>{props.percentage}</span>
-      <span>{props.ounces}</span>
-      <span>{props.price}</span>
+      <div style={numberPosition}>
+        <span style={numberStyle}>{props.number}</span>
+      </div>
+      <div style={beerInfoPosition}>
+        <span style={nameStyle}>{props.name}</span>
+        <span style={brewerStyle}>{props.brewer}</span>
+        <br></br>
+        <span style={beerTypeStyle}>{props.beerType}</span>
+        <br></br>
+        <span style={locationStyle}>{props.location}</span>
+        <span>{props.percentage}</span>
+        <span>{props.ounces}</span>
+        <span>{props.price}</span>
+      </div>
     </div>
   </div>
   );

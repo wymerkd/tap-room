@@ -1,6 +1,10 @@
 import React from "react";
 import Beer from "./Beer";
 
+const beerListStyles = {
+  paddingTop: '100px'
+}
+
 const allBeers = [
   {
     number: "1",
@@ -16,7 +20,7 @@ const allBeers = [
 
 function BeerList() {
   return (
-    <div>
+    <div style={beerListStyles}>
       {allBeers.map((givenBeer, index) => (
         <Beer
           number={givenBeer.number}
