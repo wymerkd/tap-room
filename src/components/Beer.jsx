@@ -9,29 +9,29 @@ function Beer(props){
     fontWeight: 'bold',
     borderStyle: 'none',
     borderRadius: '50%',
-    background: '#808080',
-    background: '-webkit-linear-gradient(to right, #808080, #3fada8)',
-    background: 'linear-gradient(to right, #808080, #3fada8)',
+    background: '#d1913c',
+    background: '-webkit-linear-gradient(to left, #d1913c, #ffd194)',
+    background: 'linear-gradient(to left, #d1913c, #ffd194)',
     padding: '30px 35px 30px 35px'
   }
 
   const beerPropStyles = {
     border: 'solid',
-    width: '500px',
+    width: '600px',
     height: '140px',
     marginLeft: '40px',
-    backgroundColor: '#4F5B72',
-    // paddingTop: '10px'
+    backgroundColor: '#4F5B72'
   }
 
   const numberPosition = {
     float: 'left',
-    paddingTop: '30px',
+    paddingTop: '40px',
     paddingLeft: '10px'
   }
 
   const beerInfoPosition = {
-    paddingLeft: '95px'
+    paddingLeft: '100px',
+    paddingTop: '8px'
   }
 
   const nameStyle = {
@@ -53,7 +53,7 @@ function Beer(props){
     fontSize: '18px',
     textTransform: 'capital',
     wordSpacing: '2px',
-    color: '#A3A39F'
+    color: '#FAFAFA'
   }
 
   const locationStyle = {
@@ -61,7 +61,7 @@ function Beer(props){
     textTransform: 'capital',
     wordSpacing: '2px',
     paddingRight: '5px',
-    color: '#A3A39F'
+    color: '#FAFAFA'
   }
 
   const percentageStyle = {
@@ -69,7 +69,7 @@ function Beer(props){
     textTransform: 'capital',
     wordSpacing: '2px',
     paddingRight: '5px',
-    color: '#A3A39F'
+    color: '#FAFAFA'
   }
 
   const ounceStyle = {
@@ -77,14 +77,14 @@ function Beer(props){
     textTransform: 'capital',
     wordSpacing: '2px',
     paddingRight: '5px',
-    color: '#A3A39F'
+    color: '#FAFAFA'
   }
 
   const priceStyle = {
     fontSize: '18px',
     textTransform: 'capital',
     wordSpacing: '2px',
-    color: '#A3A39F'
+    color: '#FAFAFA'
   }
 
   const kegPosition = {
@@ -92,7 +92,7 @@ function Beer(props){
     position: 'relative',
     left: '24%',
     marginRight: '18%',
-    transform: 'translate(-50%, -60%)'
+    transform: 'translate(-50%, -65%)'
   }
 
 return (
