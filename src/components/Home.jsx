@@ -1,10 +1,16 @@
 import React from 'react';
 import Header from './Header';
+import BeerList from './BeerList';
 
 function Home() {
   return(
     <div>
-      <Header/>
+      <div>
+        <Header/>
+      </div>
+      <div>
+        <BeerList/>
+      </div>
     </div>
   );
 }

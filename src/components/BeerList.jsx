@@ -6,7 +6,7 @@ const allBeers = [
     number: "1",
     name: "Men's Room",
     brewer: "Elysian",
-    type: "Red Ale",
+    beerType: "Red Ale",
     location: "Seattle, WA",
     percentage: "5.6%",
     ounces: "16oz",
@@ -22,7 +22,7 @@ function BeerList() {
           number={givenBeer.number}
           name={givenBeer.name}
           brewer={givenBeer.brewer}
-          type={givenBeer.type}
+          beerType={givenBeer.beerType}
           location={givenBeer.location}
           percentage={givenBeer.percentage}
           ounces={givenBeer.ounces}
