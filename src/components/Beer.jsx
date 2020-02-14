@@ -16,18 +16,20 @@ function Beer(props){
 
   const beerPropStyles = {
     border: 'solid',
-    width: '400px',
+    width: '500px',
     height: '110px',
-    marginLeft: '40px'
+    marginLeft: '40px',
+    backgroundColor: '#4F5B72'
   }
 
   const numberPosition = {
     float: 'left',
-    paddingTop: '30px'
+    paddingTop: '30px',
+    paddingLeft: '10px'
   }
 
   const beerInfoPosition = {
-    paddingLeft: '85px'
+    paddingLeft: '95px'
   }
 
   const nameStyle = {
@@ -35,24 +37,52 @@ function Beer(props){
     textTransform: 'uppercase',
     wordSpacing: '3px',
     paddingRight: '5px',
+    color: '#FAFAFA'
   }
 
   const brewerStyle = {
     fontSize: '24px',
     textTransform: 'uppercase',
     wordSpacing: '3px',
+    color: '#92CDE2',
   }
 
   const beerTypeStyle = {
     fontSize: '18px',
     textTransform: 'capital',
     wordSpacing: '2px',
+    color: '#A3A39F'
   }
 
   const locationStyle = {
     fontSize: '18px',
     textTransform: 'capital',
     wordSpacing: '2px',
+    paddingRight: '5px',
+    color: '#A3A39F'
+  }
+
+  const percentageStyle = {
+    fontSize: '18px',
+    textTransform: 'capital',
+    wordSpacing: '2px',
+    paddingRight: '5px',
+    color: '#A3A39F'
+  }
+
+  const ounceStyle = {
+    fontSize: '18px',
+    textTransform: 'capital',
+    wordSpacing: '2px',
+    paddingRight: '5px',
+    color: '#A3A39F'
+  }
+
+  const priceStyle = {
+    fontSize: '18px',
+    textTransform: 'capital',
+    wordSpacing: '2px',
+    color: '#A3A39F'
   }
 
 return (
@@ -68,9 +98,9 @@ return (
         <span style={beerTypeStyle}>{props.beerType}</span>
         <br></br>
         <span style={locationStyle}>{props.location}</span>
-        <span>{props.percentage}</span>
-        <span>{props.ounces}</span>
-        <span>{props.price}</span>
+        <span style={percentageStyle}>{props.percentage}</span>
+        <span style={ounceStyle}>{props.ounces}</span>
+        <span style={priceStyle}>{props.price}</span>
       </div>
     </div>
   </div>
