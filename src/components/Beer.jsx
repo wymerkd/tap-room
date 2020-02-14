@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import keg from '../assets/images/keg.png';
 
 
 function Beer(props){
@@ -17,9 +18,10 @@ function Beer(props){
   const beerPropStyles = {
     border: 'solid',
     width: '500px',
-    height: '110px',
+    height: '140px',
     marginLeft: '40px',
-    backgroundColor: '#4F5B72'
+    backgroundColor: '#4F5B72',
+    // paddingTop: '10px'
   }
 
   const numberPosition = {
@@ -85,6 +87,14 @@ function Beer(props){
     color: '#A3A39F'
   }
 
+  const kegPosition = {
+    float: 'right',
+    position: 'relative',
+    left: '24%',
+    marginRight: '18%',
+    transform: 'translate(-50%, -60%)'
+  }
+
 return (
   <div>
     <div style={beerPropStyles}>
@@ -101,6 +111,9 @@ return (
         <span style={percentageStyle}>{props.percentage}</span>
         <span style={ounceStyle}>{props.ounces}</span>
         <span style={priceStyle}>{props.price}</span>
+        <div style={kegPosition}>
+          <img src={keg} alt='keg status'/>
+        </div>
       </div>
     </div>
   </div>
