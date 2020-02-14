@@ -4,6 +4,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Switch, Route } from 'react-router-dom';
 import Error404 from './components/Error404';
 import Home from './components/Home';
+import NewBeer from './components/NewBeer';
+import NewBeerForm from './components/NewBeerForm';
+
 
 function App() {
   return (
