@@ -11,7 +11,14 @@ function Beer(props){
     background: '#808080',
     background: '-webkit-linear-gradient(to right, #808080, #3fada8)',
     background: 'linear-gradient(to right, #808080, #3fada8)',
-    padding: '25px'
+    padding: '30px 35px 30px 35px'
+  }
+
+  const beerPropStyles = {
+    border: 'solid',
+    width: '400px',
+    height: '110px',
+    marginLeft: '40px'
   }
 
   const numberPosition = {
@@ -20,8 +27,7 @@ function Beer(props){
   }
 
   const beerInfoPosition = {
-    paddingLeft: '65px',
-    border: 'solid',
+    paddingLeft: '85px'
   }
 
   const nameStyle = {
@@ -51,7 +57,7 @@ function Beer(props){
 
 return (
   <div>
-    <div>
+    <div style={beerPropStyles}>
       <div style={numberPosition}>
         <span style={numberStyle}>{props.number}</span>
       </div>
