@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Row, Col } from 'react-simple-flex-grid';
+import "react-simple-flex-grid/lib/main.css";
 import { Switch, Route } from 'react-router-dom';
 import Error404 from './components/Error404';
 import Home from './components/Home';

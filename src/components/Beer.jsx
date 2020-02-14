@@ -20,7 +20,8 @@ function Beer(props){
     width: '750px',
     height: '115px',
     marginLeft: '40px',
-    backgroundColor: '#4F5B72'
+    backgroundColor: '#4F5B72',
+    gridColumn: '2'
   }
 
   const numberPosition = {
