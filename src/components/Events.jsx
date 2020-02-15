@@ -2,14 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Events(props){
-  const headerPosition = {
-    marginLeft: '40px',
-    marginTop: '15px'
-  }
-
   return(
     <div>
-
+      <span>{props.name}</span>
+      <span>{props.description}</span>
+      <span>{props.date}</span>
+      <span>{props.time}</span>
     </div>
   );
 }
