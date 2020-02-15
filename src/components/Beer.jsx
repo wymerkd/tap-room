@@ -4,6 +4,10 @@ import keg from '../assets/images/keg.png';
 
 
 function Beer(props){
+  const beerDiv = {
+    fontFamily: 'helvetica'
+  }
+
   const numberStyle = {
     fontSize: '20px',
     fontWeight: 'bold',
@@ -27,11 +31,11 @@ function Beer(props){
   const numberPosition = {
     float: 'left',
     paddingTop: '40px',
-    paddingLeft: '10px'
+    paddingLeft: '13px'
   }
 
   const beerInfoPosition = {
-    paddingLeft: '100px',
+    paddingLeft: '110px',
     paddingTop: '8px'
   }
 
@@ -39,7 +43,7 @@ function Beer(props){
     fontSize: '24px',
     textTransform: 'uppercase',
     wordSpacing: '3px',
-    paddingRight: '5px',
+    paddingRight: '8px',
     color: '#FAFAFA'
   }
 
@@ -96,8 +100,17 @@ function Beer(props){
     transform: 'translate(-75%, -65%)'
   }
 
+  const pricePosition = {
+    float: 'right',
+    position: 'relative',
+    left: '28%',
+    marginRight: '18%',
+    transform: 'translate(-75%, -49%)',
+    textAlign: 'center'
+  }
+
 return (
-  <div>
+  <div style={beerDiv}>
     <div style={beerPropStyles}>
       <div style={numberPosition}>
         <span style={numberStyle}>{props.number}</span>
@@ -110,10 +123,13 @@ return (
         <br></br>
         <span style={locationStyle}>{props.location}</span>
         <span style={percentageStyle}>{props.percentage}</span>
-        <span style={ounceStyle}>{props.ounces}</span>
-        <span style={priceStyle}>{props.price}</span>
         <div style={kegPosition}>
           <img src={keg} alt='keg status'/>
+        </div>
+        <div style={pricePosition}>
+          <span style={ounceStyle}>{props.ounces}</span>
+          <br></br>
+          <span style={priceStyle}>{props.price}</span>
         </div>
       </div>
     </div>
