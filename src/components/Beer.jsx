@@ -24,8 +24,7 @@ function Beer(props){
     width: '620px',
     height: '115px',
     marginLeft: '40px',
-    backgroundColor: '#4F5B72',
-    display: 'block'
+    backgroundColor: '#4F5B72'
   }
 
   const numberPosition = {
