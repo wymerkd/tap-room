@@ -17,10 +17,11 @@ function Beer(props){
 
   const beerPropStyles = {
     borderStyle: 'none',
-    width: '750px',
+    width: '620px',
     height: '115px',
     marginLeft: '40px',
-    backgroundColor: '#4F5B72'
+    backgroundColor: '#4F5B72',
+    display: 'block'
   }
 
   const numberPosition = {
