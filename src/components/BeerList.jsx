@@ -17,7 +17,7 @@ const allBeers = [
     price: "$6.00",
   },
   {
-    number: "1",
+    number: "2",
     name: "Men's Room",
     brewer: "Elysian",
     beerType: "Red Ale",
@@ -27,7 +27,7 @@ const allBeers = [
     price: "$6.00",
   },
   {
-    number: "1",
+    number: "3",
     name: "Men's Room",
     brewer: "Elysian",
     beerType: "Red Ale",
@@ -37,7 +37,7 @@ const allBeers = [
     price: "$6.00",
   },
   {
-    number: "1",
+    number: "4",
     name: "Men's Room",
     brewer: "Elysian",
     beerType: "Red Ale",
@@ -47,7 +47,7 @@ const allBeers = [
     price: "$6.00",
   },
   {
-    number: "1",
+    number: "5",
     name: "Men's Room",
     brewer: "Elysian",
     beerType: "Red Ale",
@@ -57,7 +57,7 @@ const allBeers = [
     price: "$6.00",
   },
   {
-    number: "1",
+    number: "6",
     name: "Men's Room",
     brewer: "Elysian",
     beerType: "Red Ale",
@@ -67,7 +67,7 @@ const allBeers = [
     price: "$6.00",
   },
   {
-    number: "1",
+    number: "7",
     name: "Men's Room",
     brewer: "Elysian",
     beerType: "Red Ale",
@@ -77,7 +77,7 @@ const allBeers = [
     price: "$6.00",
   },
   {
-    number: "1",
+    number: "8",
     name: "Men's Room",
     brewer: "Elysian",
     beerType: "Red Ale",
@@ -87,7 +87,7 @@ const allBeers = [
     price: "$6.00",
   },
   {
-    number: "1",
+    number: "9",
     name: "Men's Room",
     brewer: "Elysian",
     beerType: "Red Ale",
@@ -97,7 +97,7 @@ const allBeers = [
     price: "$6.00",
   },
   {
-    number: "1",
+    number: "10",
     name: "Men's Room",
     brewer: "Elysian",
     beerType: "Red Ale",
@@ -107,7 +107,7 @@ const allBeers = [
     price: "$6.00",
   },
   {
-    number: "1",
+    number: "11",
     name: "Men's Room",
     brewer: "Elysian",
     beerType: "Red Ale",
@@ -117,17 +117,7 @@ const allBeers = [
     price: "$6.00",
   },
   {
-    number: "1",
-    name: "Men's Room",
-    brewer: "Elysian",
-    beerType: "Red Ale",
-    location: "Seattle, WA",
-    percentage: "5.6%",
-    ounces: "16oz",
-    price: "$6.00",
-  },
-  {
-    number: "1",
+    number: "12",
     name: "Men's Room",
     brewer: "Elysian",
     beerType: "Red Ale",
