@@ -8,7 +8,7 @@ function NewBeer() {
   return(
     <div>
       <Header/>
-      <Link to="/newbeerform">Add New Beer</Link>
+      <NewBeerForm/>
     </div>
   );
 }
