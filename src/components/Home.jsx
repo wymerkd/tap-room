@@ -22,7 +22,18 @@ function Home() {
       <div>
         <EventsList/>
       </div>
-
+      <InstagramEmbed
+        url='https://www.instagram.com/p/B1RfqPHgi_e/'
+        maxWidth={320}
+        hideCaption={false}
+        containerTagName='div'
+        protocol=''
+        injectScript
+        onLoading={() => {}}
+        onSuccess={() => {}}
+        onAfterRender={() => {}}
+        onFailure={() => {}}
+      />
     </div>
   );
 }
