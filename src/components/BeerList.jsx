@@ -2,7 +2,7 @@ import React,{useState, useContext} from "react";
 import Beer from "./Beer";
 import {BeerContext} from "./BeerContext"
 
-const BeerList = () => {
+const BeerList = (props) => {
   const [beers, setBeers]= useContext(BeerContext);
 
   const beerListStyles = {
