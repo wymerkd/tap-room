@@ -6,6 +6,8 @@ import BeerList from './BeerList';
 import BeerListTwo from './BeerListTwo';
 import EventsList from './EventsList';
 import {BeerProvider} from './BeerContext';
+import NewBeerForm from './NewBeerForm'
+
 
 
 
@@ -17,6 +19,7 @@ function Home() {
           <Header/>
         </div>
         <div>
+          <NewBeerForm/>
           <Row>
             <Col span={6}><BeerList/></Col>
             <Col span={6}><BeerListTwo/></Col>
