@@ -12,30 +12,30 @@ const NewBeerForm = () => {
   const [ounces, setOunces] = useState('')
   const [price, setPrice] = useState('')
   const [beers, setBeers] = useContext(BeerContext);
-  
+
   const updateNumber = (e) => {
     setNumber(e.target.value)
   }
   const updateName = (e) => {
-    setNumber(e.target.value)
+    setName(e.target.value)
   }
   const updateBrewer = (e) => {
-    setNumber(e.target.value)
+    setBrewer(e.target.value)
   }
   const updateBeerType = (e) => {
-    setNumber(e.target.value)
+    setBeerType(e.target.value)
   }
   const updateLocation = (e) => {
-    setNumber(e.target.value)
+    setLocation(e.target.value)
   }
   const updatePercentage = (e) => {
-    setNumber(e.target.value)
+    setPercentage(e.target.value)
   }
   const updateOunces = (e) => {
-    setNumber(e.target.value)
+    setOunces(e.target.value)
   }
   const updatePrice = (e) => {
-    setNumber(e.target.value)
+    setPrice(e.target.value)
   }
 
   const addBeer = e => {
