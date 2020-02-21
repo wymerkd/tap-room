@@ -6,6 +6,7 @@ import BeerList from './BeerList';
 import BeerListTwo from './BeerListTwo';
 import EventsList from './EventsList';
 import {BeerProvider} from './BeerContext';
+import NewBeerForm from './NewBeerForm'
 
 
 

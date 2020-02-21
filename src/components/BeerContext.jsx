@@ -33,16 +33,6 @@ export const BeerProvider = (props) => {
     percentage: "5.6%",
     ounces: "16oz",
     price: "$6.00",
-  },
-  {
-    number: "4",
-    name: "Men's Room",
-    brewer: "Elysian",
-    beerType: "Red Ale",
-    location: "Seattle, WA",
-    percentage: "5.6%",
-    ounces: "16oz",
-    price: "$6.00",
   }
 ]);
 return(
