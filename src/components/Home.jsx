@@ -5,7 +5,7 @@ import Header from './Header';
 import BeerList from './BeerList';
 import BeerListTwo from './BeerListTwo';
 import EventsList from './EventsList';
-import InstagramEmbed from 'react-instagram-embed';
+
 
 function Home() {
   return(
@@ -22,18 +22,6 @@ function Home() {
       <div>
         <EventsList/>
       </div>
-      <InstagramEmbed
-        url='https://www.instagram.com/p/B1RfqPHgi_e/'
-        maxWidth={320}
-        hideCaption={false}
-        containerTagName='div'
-        protocol=''
-        injectScript
-        onLoading={() => {}}
-        onSuccess={() => {}}
-        onAfterRender={() => {}}
-        onFailure={() => {}}
-      />
     </div>
   );
 }

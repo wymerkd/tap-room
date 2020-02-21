@@ -53,3 +53,5 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 
 ![App Component Structure](app-component-structure.png "App Component Structure")
+
+authentication stuff
