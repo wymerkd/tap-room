@@ -1,12 +1,12 @@
 import React,{useState} from "react";
 import Beer from "./Beer";
 
-const beerListStyles = {
-  paddingTop: '100px'
-}
+// const beerListStyles = {
+//   paddingTop: '100px'
+// }
 
 const BeerList = () => {
-  const [beer, setBeer] = useState ([
+  const [beers, setBeers] = useState ([
   {
     number: "1",
     name: "Men's Room",
@@ -48,25 +48,32 @@ const BeerList = () => {
     price: "$6.00",
   }
 ]);
-
-function BeerList() {
-  return (
-    <div style={beerListStyles}>
-      {allBeers.map((givenBeer, index) => (
-        <Beer
-          number={givenBeer.number}
-          name={givenBeer.name}
-          brewer={givenBeer.brewer}
-          beerType={givenBeer.beerType}
-          location={givenBeer.location}
-          percentage={givenBeer.percentage}
-          ounces={givenBeer.ounces}
-          price={givenBeer.price}
-          key={index}
-        />
-      ))}
-    </div>
+return(
+  <div>
+    {beers.map(beer => (
+      <li>{beer.name}</li>
+    ))}
+  </div>
   );
-}
+};
+// function BeerList() {
+//   return (
+//     <div style={beerListStyles}>
+//       {allBeers.map((givenBeer, index) => (
+//         <Beer
+//           number={givenBeer.number}
+//           name={givenBeer.name}
+//           brewer={givenBeer.brewer}
+//           beerType={givenBeer.beerType}
+//           location={givenBeer.location}
+//           percentage={givenBeer.percentage}
+//           ounces={givenBeer.ounces}
+//           price={givenBeer.price}
+//           key={index}
+//         />
+//       ))}
+//     </div>
+//   );
+// }
 
 export default BeerList;
