@@ -1,11 +1,12 @@
-import React from "react";
+import React,{useState} from "react";
 import Beer from "./Beer";
 
 const beerListStyles = {
   paddingTop: '100px'
 }
 
-const allBeers = [
+const BeerList = () => {
+  const [beer, setBeer] = useState ([
   {
     number: "1",
     name: "Men's Room",
@@ -46,7 +47,7 @@ const allBeers = [
     ounces: "16oz",
     price: "$6.00",
   }
-];
+]);
 
 function BeerList() {
   return (
