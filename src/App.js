@@ -10,7 +10,30 @@ import NewBeer from './components/NewBeer';
 import NewBeerForm from './components/NewBeerForm';
 import { v4 } from 'uuid';
 
-function App() {
+class App extends React.Component {
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      masterBeerList: {},
+      selectedBeer: null
+    };
+    this.handleAddinNewBeerToList = this.handleAddinNewBeerToList.bind(this);
+    this.handleChangingSelectedBeer = this.handleChangingSelectedBeer.bind(this);
+  }
+
+  handleAddingNewBeerToList(newBeer){
+    let newBeerId = v4()
+    let newMasterBeerList = Object.assign({}, this.state.masterBeerList, {
+      [newBeerId]: newBeer
+    });
+  }
+
+  handleChangingSelectedBeer(BeerId){
+      this.setState({selectedBeer: beerId});
+    }
+
+render() {
   return (
       <div className="App">
         <div>
@@ -22,6 +45,7 @@ function App() {
         </div>
       </div>
   );
+}
 }
 
 export default App;
