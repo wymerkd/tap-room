@@ -8,11 +8,10 @@ import Error404 from './components/Error404';
 import Home from './components/Home';
 import NewBeer from './components/NewBeer';
 import NewBeerForm from './components/NewBeerForm';
-import {BeerProvider} from './components/BeerContext';
+import { v4 } from 'uuid';
 
 function App() {
   return (
-    <BeerProvider>
       <div className="App">
         <div>
           <Switch>
@@ -22,7 +21,6 @@ function App() {
           </Switch>
         </div>
       </div>
-    </BeerProvider>
   );
 }
 
