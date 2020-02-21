@@ -1,108 +1,82 @@
 import React, {useState, useContext} from 'react';
 import Header from './Header';
-import {BeerContext} from './BeerContext';
+import PropTypes from 'prop-types';
+import { v4 } from 'uuid';
 
-const NewBeerForm = () => {
-  const [number, setNumber] = useState('')
-  const [name, setName] = useState('')
-  const [brewer, setBrewer] = useState('')
-  const [beerType, setBeerType] = useState('')
-  const [location, setLocation] = useState('')
-  const [percentage, setPercentage] = useState('')
-  const [ounces, setOunces] = useState('')
-  const [price, setPrice] = useState('')
-  const [beers, setBeers] = useContext(BeerContext);
+function NewBeerForm(props) {
+  let _number = null;
+  let _name = null;
+  let _brewer = null;
+  let _beerType = null;
+  let _location = null;
+  let _percentage = null;
+  let _ounces = null;
+  let _price = null;
 
-  const updateNumber = (e) => {
-    setNumber(e.target.value)
+  function handleNewBeerFormSubmission(event) {
+    event.preventDefault();
+    props.onNewBeerCreation({number: _number.value, name: _name.value, brewer: _brewer.value, beerType: _beerType.value, location: _location.value, percentage: _percentage.value, ounces: _ounces.value, price: _price.value});
+    _number.value ='';
+    _name.value ='';
+    _brewer.value ='';
+    _beerType.value ='';
+    _location.value ='';
+    _percentage.value ='';
+    _ounces.value ='';
+    _price.value ='';
   }
-  const updateName = (e) => {
-    setName(e.target.value)
-  }
-  const updateBrewer = (e) => {
-    setBrewer(e.target.value)
-  }
-  const updateBeerType = (e) => {
-    setBeerType(e.target.value)
-  }
-  const updateLocation = (e) => {
-    setLocation(e.target.value)
-  }
-  const updatePercentage = (e) => {
-    setPercentage(e.target.value)
-  }
-  const updateOunces = (e) => {
-    setOunces(e.target.value)
-  }
-  const updatePrice = (e) => {
-    setPrice(e.target.value)
-  }
-
-  const addBeer = e => {
-    e.preventDefault();
-    setBeers(prevBeers => [...prevBeers, {number: number, name: name, brewer: brewer, beerType: beerType, location: location, percentage: percentage, ounces: ounces, price: price}])
-  }
-
 
   return(
     <div>
       <div>
-        <form onSubmit={addBeer}>
+        <form onSubmit={handleNewBeerFormSubmission}>
          <input
            type="text"
            id="number"
            placeholder="Number"
-           value={number}
-           onChange={updateNumber}/>
+           ref={(input) => {_number = input;}}/>
          <br/>
          <input
            type="text"
            id="name"
            placeholder="Beer Name"
-           value={name}
-           onChange={updateName}/>
+           ref={(input) => {_name = input;}}/>
          <br/>
          <input
            type="text"
            id="brewer"
            placeholder="Brewer"
-           value={brewer}
-           onChange={updateBrewer}/>
+           ref={(input) => {_brewer = input;}}/>
          <br/>
          <input
            type="text"
            id="beerType"
            placeholder="Beer Type"
-           value={beerType}
-           onChange={updateBeerType}/>
+           ref={(input) => {_beerType = input;}}/>
          <br/>
          <input
            type="text"
            id="location"
            placeholder="Brewer Location"
-           value={location}
-           onChange={updateLocation}/>
+           ref={(input) => {_location = input;}}/>
          <br/>
          <input
            type="text"
            id="percentage"
            placeholder="Alcohol Percentage"
-           value={percentage}
-           onChange={updatePercentage}/>
+           ref={(input) => {_percentage= input;}}/>
          <br/>
           <input
             type="text"
             id="ounces"
             placeholder="Ounces"
-            value={ounces}
-            onChange={updateOunces}/>
+            ref={(input) => {_ounces = input;}}/>
           <br/>
           <input
             type="text"
             id="price"
             placeholder="Price"
-            value={price}
-            onChange={updatePrice}/>
+            ref={(input) => {_price = input;}}/>
           <br/>
          <button type='submit'>Add Beer!</button>
        </form>
@@ -110,5 +84,9 @@ const NewBeerForm = () => {
     </div>
   );
 }
+
+NewBeerForm.propTypes = {
+  onNewBeerCreation: PropTypes.func
+};
 
 export default NewBeerForm;
