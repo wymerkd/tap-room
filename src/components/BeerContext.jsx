@@ -2,7 +2,7 @@ import React, {useState, createContext} from 'react';
 
 export const BeerContext = createContext();
 
-export const BeerProvider = () => {
+export const BeerProvider = (props) => {
   const [beers, setBeers] = useState ([
   {
     number: "1",
@@ -47,7 +47,9 @@ export const BeerProvider = () => {
 ]);
 return(
   <div>
-
+    <BeerContext.Provider value={[beers, setBeers]}>
+      {props.children}
+    </BeerContext.Provider>
   </div>
   );
 }

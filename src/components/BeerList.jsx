@@ -1,53 +1,14 @@
-import React,{useState} from "react";
+import React,{useState, useContext} from "react";
 import Beer from "./Beer";
+import {BeerContext} from "./BeerContext"
 
 const BeerList = () => {
+  const [beers, setBeers]= useContext(BeerContext);
+
   const beerListStyles = {
     paddingTop: '100px'
   }
 
-  const [beers, setBeers] = useState ([
-  {
-    number: "1",
-    name: "Men's Room",
-    brewer: "Elysian",
-    beerType: "Red Ale",
-    location: "Seattle, WA",
-    percentage: "5.6%",
-    ounces: "16oz",
-    price: "$6.00",
-  },
-  {
-    number: "2",
-    name: "Men's Room",
-    brewer: "Elysian",
-    beerType: "Red Ale",
-    location: "Seattle, WA",
-    percentage: "5.6%",
-    ounces: "16oz",
-    price: "$6.00",
-  },
-  {
-    number: "3",
-    name: "Men's Room",
-    brewer: "Elysian",
-    beerType: "Red Ale",
-    location: "Seattle, WA",
-    percentage: "5.6%",
-    ounces: "16oz",
-    price: "$6.00",
-  },
-  {
-    number: "4",
-    name: "Men's Room",
-    brewer: "Elysian",
-    beerType: "Red Ale",
-    location: "Seattle, WA",
-    percentage: "5.6%",
-    ounces: "16oz",
-    price: "$6.00",
-  }
-]);
 return(
   <div style={beerListStyles}>
     {beers.map(beer => (

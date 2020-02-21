@@ -5,24 +5,27 @@ import Header from './Header';
 import BeerList from './BeerList';
 import BeerListTwo from './BeerListTwo';
 import EventsList from './EventsList';
+import {BeerProvider} from './BeerContext';
 
 
 function Home() {
   return(
-    <div>
+    <BeerProvider>
       <div>
-        <Header/>
+        <div>
+          <Header/>
+        </div>
+        <div>
+          <Row>
+            <Col span={6}><BeerList/></Col>
+            <Col span={6}><BeerListTwo/></Col>
+          </Row>
+        </div>
+        <div>
+          <EventsList/>
+        </div>
       </div>
-      <div>
-        <Row>
-          <Col span={6}><BeerList/></Col>
-          <Col span={6}><BeerListTwo/></Col>
-        </Row>
-      </div>
-      <div>
-        <EventsList/>
-      </div>
-    </div>
+  </BeerProvider>
   );
 }
 

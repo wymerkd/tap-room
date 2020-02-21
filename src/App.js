@@ -8,19 +8,21 @@ import Error404 from './components/Error404';
 import Home from './components/Home';
 import NewBeer from './components/NewBeer';
 import NewBeerForm from './components/NewBeerForm';
-
+import {BeerProvider} from './components/BeerContext';
 
 function App() {
   return (
-    <div className="App">
-      <div>
-      <Switch>
-        <Route exact path='/' component={Home}/>
-        <Route path='/newbeer' component={NewBeer}/>
-        <Route component={Error404}/>
-      </Switch>
-    </div>
-    </div>
+    <BeerProvider>
+      <div className="App">
+        <div>
+          <Switch>
+            <Route exact path='/' component={Home}/>
+            <Route path='/newbeer' component={NewBeer}/>
+            <Route component={Error404}/>
+          </Switch>
+        </div>
+      </div>
+    </BeerProvider>
   );
 }
 
