@@ -1,16 +1,18 @@
 import React, {useState, useContext} from 'react';
 import Header from './Header';
+import {BeerContext} from './BeerContext';
 
 const NewBeerForm = () => {
-  const [number, setNumber] = useState(''),
-  const [name, setName] = useState(''),
-  const [brewer, setBrewer = useState(''),
-  const [beerType, setBeerType] = useState(''),
-  const [location, setLocation] = useState(''),
-  const [percentage, setPercentage] = useState(''),
-  const [ounces, setOunces] = useState(''),
-  const [price, setPrice] = useState(''),
-
+  const [number, setNumber] = useState('')
+  const [name, setName] = useState('')
+  const [brewer, setBrewer] = useState('')
+  const [beerType, setBeerType] = useState('')
+  const [location, setLocation] = useState('')
+  const [percentage, setPercentage] = useState('')
+  const [ounces, setOunces] = useState('')
+  const [price, setPrice] = useState('')
+  const [beers, setBeers] = useContext(BeerContext);
+  
   const updateNumber = (e) => {
     setNumber(e.target.value)
   }
@@ -34,6 +36,11 @@ const NewBeerForm = () => {
   }
   const updatePrice = (e) => {
     setNumber(e.target.value)
+  }
+
+  const addBeer = e => {
+    e.preventDefault();
+    setBeers(prevBeers => [...prevBeers, {number: number, name: name, brewer: brewer, beerType: beerType, location: location, percentage: percentage, ounces: ounces, price: price}])
   }
 
 
