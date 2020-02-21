@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import keg from '../assets/images/keg.png';
 
 
-function Beer(props){
+const Beer = (props) => {
   const beerDiv = {
     fontFamily: 'helvetica'
   }

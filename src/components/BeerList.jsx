@@ -1,11 +1,11 @@
 import React,{useState} from "react";
 import Beer from "./Beer";
 
-// const beerListStyles = {
-//   paddingTop: '100px'
-// }
-
 const BeerList = () => {
+  const beerListStyles = {
+    paddingTop: '100px'
+  }
+
   const [beers, setBeers] = useState ([
   {
     number: "1",
@@ -49,9 +49,19 @@ const BeerList = () => {
   }
 ]);
 return(
-  <div>
+  <div style={beerListStyles}>
     {beers.map(beer => (
-      <li>{beer.name}</li>
+      <Beer
+         number={beer.number}
+         name={beer.name}
+         brewer={beer.brewer}
+         beerType={beer.beerType}
+         location={beer.location}
+         percentage={beer.percentage}
+         ounces={beer.ounces}
+         price={beer.price}
+         key={beer.id}
+       />
     ))}
   </div>
   );
