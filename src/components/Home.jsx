@@ -8,6 +8,7 @@ import EventsList from './EventsList';
 import {BeerProvider} from './BeerContext';
 
 
+
 function Home() {
   return(
     <BeerProvider>
