@@ -1,6 +1,7 @@
 import React, {useState, useContext} from 'react';
 import Header from './Header';
 import {BeerContext} from './BeerContext';
+import BeerList from './BeerList'
 
 const NewBeerForm = () => {
   const [number, setNumber] = useState('')
@@ -47,6 +48,7 @@ const NewBeerForm = () => {
   return(
     <div>
       <div>
+        <BeerList/>
         <form onSubmit={addBeer}>
          <input
            type="text"
