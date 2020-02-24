@@ -1,12 +1,12 @@
 # _Tap Room_
 
-#### _An application built with create-react-app which displays a beer menu for a tap room, 2/14/2020_
+#### _An application built with create-react-app which displays a beer menu for a tap room, 2/21/2020_
 
 #### By _**Kyle Wymer**_
 
 ## Description
 
-_This application allows a user view a live updating menu for a tap room. Currently working on displaying events and and an Instagram feed for the taproom. Updates for creating a new beer to add to the master beer list coming soon._
+_This application allows a user to view a live updating menu for a tap room. Users are also able to add a new beer to the beer list using the new beer form._
 
 ## Specifications
 
