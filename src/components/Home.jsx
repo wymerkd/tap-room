@@ -4,7 +4,6 @@ import "react-simple-flex-grid/lib/main.css";
 import Header from './Header';
 import BeerList from './BeerList';
 import BeerListTwo from './BeerListTwo';
-import EventsList from './EventsList';
 import {BeerProvider} from './BeerContext';
 import NewBeerForm from './NewBeerForm'
 
@@ -20,13 +19,6 @@ function Home() {
         </div>
         <div>
           <NewBeerForm/>
-          <Row>
-            <Col span={6}><BeerList/></Col>
-            <Col span={6}><BeerListTwo/></Col>
-          </Row>
-        </div>
-        <div>
-          <EventsList/>
         </div>
       </div>
   </BeerProvider>
