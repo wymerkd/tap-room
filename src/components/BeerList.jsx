@@ -27,24 +27,5 @@ return(
   </div>
   );
 };
-// function BeerList() {
-//   return (
-//     <div style={beerListStyles}>
-//       {allBeers.map((givenBeer, index) => (
-//         <Beer
-//           number={givenBeer.number}
-//           name={givenBeer.name}
-//           brewer={givenBeer.brewer}
-//           beerType={givenBeer.beerType}
-//           location={givenBeer.location}
-//           percentage={givenBeer.percentage}
-//           ounces={givenBeer.ounces}
-//           price={givenBeer.price}
-//           key={index}
-//         />
-//       ))}
-//     </div>
-//   );
-// }
 
 export default BeerList;

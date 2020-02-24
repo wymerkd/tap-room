@@ -44,7 +44,6 @@ const NewBeerForm = () => {
     setBeers(prevBeers => [...prevBeers, {number: number, name: name, brewer: brewer, beerType: beerType, location: location, percentage: percentage, ounces: ounces, price: price}])
   }
 
-
   return(
     <div>
       <div>
